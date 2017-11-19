@@ -30,11 +30,11 @@
 	echo " <h4>The future<h4><br>";
        elseif  (strcmp($date, $tar) < 0)
 	echo "<br><h4> The past<h4>";
-        else  echo " Oops";
-    echo"<hr>";
+       else  echo " Oops";
+        echo"<hr>";
 
 
-for($i=0; $i <strlen($tar);$i++)
+    for($i=0; $i <strlen($tar);$i++)
         {
            if($tar[$i]=='/')
            {
@@ -44,14 +44,14 @@ for($i=0; $i <strlen($tar);$i++)
 
     echo"<hr>";
 
-   echo"number of words in $date is:";
+    echo"number of words in $date is:";
     $temp1 = str_word_count($tar);
     echo "$temp1";
     echo"<br>";
     echo"<hr>";
 
 
-   echo"the length of $date is:";
+    echo"the length of $date is:";
     $temp2 = strlen($date);
     echo "$temp2";
     echo"<br>";
@@ -83,7 +83,7 @@ for($i=0; $i <strlen($tar);$i++)
 
 
   echo"using foreach to check leap year" ;
-foreach($year as $value)
+  foreach($year as $value)
 				{
 					if(((int)$value)%4==0  )
 						echo "<br>True";
@@ -93,7 +93,7 @@ foreach($year as $value)
 				}
 
 
-echo "<hr>";
+ echo "<hr>";
  
  echo "using do-while to check leap year";
               $i=0;
